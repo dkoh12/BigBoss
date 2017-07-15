@@ -1,0 +1,20 @@
+{
+  "name": "fbbot",
+  "version": "1.0.0",
+  "description": "Facebook Chat Bot",
+  "main": "webhook.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "engines": {
+    "node": "8.0.0"
+  },
+  "author": "David Koh",
+  "license": "ISC",
+  "dependencies": {
+    "apiai": "^4.0.3",
+    "body-parser": "^1.17.2",
+    "express": "^4.15.3",
+    "request": "^2.81.0"
+  }
+}
