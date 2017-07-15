@@ -5,7 +5,7 @@ const bodyParser = require('body-parser');
 const app = express();
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
-const apiaiApp = require('apiai')("bd60b525ec224269adc52486f3ee3bc1");
+const apiaiApp = require('apiai')("INSERT_KEY_HERE");
 const request = require('request');
 
 const server = app.listen(process.env.PORT || 5000, () => {
