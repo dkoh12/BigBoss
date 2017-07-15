@@ -39,7 +39,7 @@ app.post('/webhook', (req, res) => {
 app.post('/ai', (req, res) => {
 	if (req.body.result.action === 'weather') {
 		let city = req.body.result.parameters['geo-city'];
-		let WEATHER_API_KEY = "6470a3f87e8e2dcd9e419cb8bcb5b927";
+		let WEATHER_API_KEY = "INSERT_KEY_HERE";
 		let restUrl = 'http://api.openweathermap.org/data/2.5/weather?units=imperial&APPID='+WEATHER_API_KEY+'&q='+city;
 
 		request.get(restUrl, (err, response, body) => {
@@ -74,7 +74,7 @@ function sendMessage(event) {
 
 		request({
 			url: 'https://graph.facebook.com/v2.6/me/messages',
-			qs: {access_token: "EAABb2UnINZA8BAFaimiuulKaq57REQQlLEC7OCXtThS44i4drW4zcczEDQUZBz1NisbDensCf16ZBpdHXGa7nBCKKMf8PMs527WpNhVtXnASGSUhUDwMMnfXzjZBs6W4JvlyvMpLtNFCR1QNZBFVv3muUvFNqLT4ORzfxj6AyeAZDZD"},
+			qs: {access_token: "INSERT_TOKEN_HERE"},
 			method: 'POST',
 			json: {
 				recipient: {id: sender},
